@@ -1,22 +1,18 @@
 <template>
-  <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
+<el-container class="app-w">
+  <sl-side></sl-side>
+  <el-container>
+    <el-header style="text-align: right; font-size: 12px">
+      <span>王小虎</span>
+    </el-header>
+
+    <el-main>
+      content
+    </el-main>
+  </el-container>
+</el-container>
 </template>
 
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import SlSide from './components/Layout/SlSide.vue';
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-.element-plus-logo {
-  width: 50%
-}
-</style>
