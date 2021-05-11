@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store'
 import { components, plugins } from './ui'
 import './assets/scss/main.scss'
 
@@ -17,4 +19,4 @@ plugins.forEach(plugin => {
   app.use(plugin)
 })
 
-app.mount('#app')
+app.use(store).use(router).mixin(mixins).mount('#app')
