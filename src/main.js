@@ -2,6 +2,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import mixins from './mixin/index'
 import { components, plugins } from './ui'
 import './assets/scss/main.scss'
 
