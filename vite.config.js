@@ -7,11 +7,11 @@ import styleImport from 'vite-plugin-style-import'
  * @type {import('vite').UserConfig}
  */
 
-module.exports = {
+export default {
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
-    },
+    }
   },
   plugins: [
     vue(),
@@ -29,7 +29,10 @@ module.exports = {
         },
       }]
     })
-  ]
+  ],
+  server: {
+    port: 8082
+  }
 }
 // export default defineConfig({
   

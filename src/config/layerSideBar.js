@@ -1,5 +1,24 @@
 export default [
   {
+    id: 1,
+    title: '账号管理',
+    path: '/account',
+    parent: null,
+    icon: 'iconfont sc-zhanghaoguanli',
+    roles: ['admin', 'crmSchoolAdmin', 'crmHospital']
+  },
+  {
+    id: 2,
+    title: '医院账号',
+    path: '/hospital',
+    parent: 1,
+    icon: 'iconfont sc-huodongliebiao',
+    roles: ['admin', 'crmSchoolAdmin', 'crmHospital']
+  }
+]
+
+export default [ 
+  {
     path: '/',
     name: 'AuthPage',
     component: () => import('@/pages/authPage.vue'),
